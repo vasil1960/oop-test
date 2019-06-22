@@ -3,11 +3,7 @@
 class Signal extends Dbh {
 
     public function  allSignals($limit) {
-        $stmt = $this->connect()->query("SELECT * FROM signali LIMIT $limit");
-        while ($signals = $stmt->fetchAll(PDO::FETCH_OBJ)) {
-            foreach ($signals as $signal) {
-                echo $signal->opisanie; 
-            }
-        };
+        $stmt = $this->connect()->query("SELECT * FROM signali ORDER BY id DESC LIMIT $limit");
+        return $stmt->fetchAll(PDO::FETCH_OBJ);   
     }
 }
