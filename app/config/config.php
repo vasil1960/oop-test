@@ -1,8 +1,8 @@
 <?php 
-define("SERVERNAME","172.16.4.34");
-define("USERNAME","cotaivo");
-define("PASSWORD","taniami");
-define("DBNAME","iag112new");
+define("SERVERNAME","");
+define("USERNAME","");
+define("PASSWORD","");
+define("DBNAME","");
 // return  [
 //     $servername = '',
 //     $username = '',
