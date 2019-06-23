@@ -13,10 +13,10 @@ class Dbh {
     
     public function __construct() 
     {
-        $this->servername = '';
-        $this->username = '';
-        $this->password = '';
-        $this->dbname = '';
+        $this->servername = '172.16.4.34';
+        $this->username = 'cotaivo';
+        $this->password = 'taniami';
+        $this->dbname = 'iag112new';
     }
 
     public function connect()
