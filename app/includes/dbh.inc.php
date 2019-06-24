@@ -1,8 +1,8 @@
 <?php
 
-require '../app/config/config.php';
+namespace app\includes;
 
-// var_dump($conf);
+use PDO;
 
 class Dbh {
     
@@ -11,12 +11,14 @@ class Dbh {
     protected $password;
     protected $dbname;
     
-    public function __construct() 
+    public function __construct($conf) 
     {
-        $this->servername = '';
-        $this->username = '';
-        $this->password = '';
-        $this->dbname = '';
+        // var_dump($conf);
+        
+        $this->servername = $conf['servername'];
+        $this->username = $conf['username'];
+        $this->password = $conf['password'];
+        $this->dbname = $conf['dbname'];
     }
 
     public function connect()

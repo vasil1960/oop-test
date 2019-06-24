@@ -1,3 +1,3 @@
 <?php
 
-require '../app/controllers/signali.php';
+require '../app/controllers/index.php';
