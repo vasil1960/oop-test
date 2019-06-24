@@ -5,7 +5,7 @@ require '../app/includes/signal.inc.php';
 $conf = require '../app/config/config.php';
 
 $signal = new Signal($conf);
-$signali = $signal->allSignals(50);
+$signali = $signal->allSignals(100);
 
 $data = [
     'jumbotronTitle'=> 'Телефон 112',
